@@ -1,0 +1,74 @@
+/* 淡出 */
+@keyframes topFadeOut
+{
+from {transform:translateY(0);opacity: 1;}
+to {transform: translateY(-100px);opacity: 0;}
+}
+
+@-moz-keyframes topFadeOut /* Firefox */
+{
+from {transform:translateY(0);opacity: 1;}
+to {transform: translateY(-100px);opacity: 0;}
+}
+
+@-webkit-keyframes topFadeOut /* Safari 和 Chrome */
+{
+from {transform:translateY(0);opacity: 1;}
+to {transform: translateY(-100px);opacity: 0;}
+}
+
+@-o-keyframes topFadeOut /* Opera */
+{
+from {transform:translateY(0);opacity: 1;}
+to {transform: translateY(-100px);opacity: 0;}
+}
+
+@-ms-keyframes topFadeOut
+{
+	from {transform:translateY(0);opacity: 1;}
+	to {transform: translateY(-100px);opacity: 0;}
+}
+.topFadeOut{
+	animation: topFadeOut 1s forwards;    /*调用已定义好的动画topFadeOut，全程运行时间1S，进入的速度曲线为ease*/
+	-webkit-animation: topFadeOut 1s forwards;
+	-moz-animation: topFadeOut 1s forwards;
+	-ms-animation: topFadeOut 1s forwards;
+	-o-animation: topFadeOut 1s forwards;
+}
+/* 淡入 */
+@keyframes topFadeIn
+{
+from {transform:translateY(-100px);opacity: 0;}
+to {transform: translateY(0);opacity: 1;}
+}
+
+@-moz-keyframes topFadeIn /* Firefox */
+{
+from {transform:translateY(-100px);opacity: 0;}
+to {transform: translateY(0);opacity: 1;}
+}
+
+@-webkit-keyframes topFadeIn /* Safari 和 Chrome */
+{
+from {transform:translateY(-100px);opacity: 0;}
+to {transform: translateY(0);opacity: 1;}
+}
+
+@-o-keyframes topFadeIn /* Opera */
+{
+from {transform:translateY(-100px);opacity: 0;}
+to {transform: translateY(0);opacity: 1;}
+}
+
+@-ms-keyframes topFadeIn
+{
+	from {transform:translateY(-100px);opacity: 0;}
+	to {transform: translateY(0);opacity: 1;}
+}
+.topFadeIn{
+	animation: topFadeIn 1s;    /*调用已定义好的动画topFadeIn，全程运行时间1S，进入的速度曲线为ease*/
+	-webkit-animation: topFadeIn 1s;
+	-moz-animation: topFadeIn 1s;
+	-ms-animation: topFadeIn 1s;
+	-o-animation: topFadeIn 1s;
+}

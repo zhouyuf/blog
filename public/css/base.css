@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+input{
+	outline: none;
+	border: 0;
+}
+body{
+/* 	height: 2000px; */
+}
+.cancel{
+	display: none;
+}
+/* 背景图片 */
+#bg{
+	position: fixed;
+	z-index: -999;
+	width: 100%;
+	height: 100%;
+	background: url(../img/ais.png) no-repeat;
+	/* background-size: 100%; */
+	background-position: center 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+/* 头部菜单栏 */
+#header{
+	height: 100px;
+	width: 1280px;
+	
+}
+.toolBar{
+	position: fixed;
+	height: 100px;
+	width: 1280px;
+	background-color: rgba(0,0,0,.5);
+}
+.headerScroll{
+	position: fixed!important;
+	top: 0;
+	z-index: 999;
+}
+.logo{
+	position: absolute;
+	top: 20px;
+	left: 60px;
+	width: 320px;
+	height: 60px;
+	line-height: 60px;
+}
+.logo h1{
+	color: #fff;
+}
+.topMenu{
+	position: absolute;
+	top: 40px;
+	right: 60px;
+	width: 700px;
+	height: 20px;
+}
+.topMenu ul{
+	list-style: none;
+}
+.topMenu ul li{
+	float: left;
+	padding: 0 20px;
+	font-size: 20px;
+}
+.topMenu ul li a:hover{
+	background: rgba(0,0,0,.7);
+}
+.topMenu ul li a{
+	border-radius: 5px;
+	color: mintcream;
+}
+.onblur{
+	background: rgba(0,0,0,.5)!important;
+}
+#search{
+	position: absolute;
+	right: 0;
+	width: 220px;
+	height: 30px;
+	color: #e0e0e0;
+	background-color: rgba(0,0,0,0.3);
+	border-radius: 5px;
+	font-size: 18px;
+	text-indent: 1em;
+}
+/* 主体部分 */
+.main{
+	margin-top: 100px;
+	display: flex;
+}
+.left{
+	background-color: skyblue;
+	flex: 0 0 300px;
+	height: 600px;
+}
+.mid{
+	background-color: green;
+	flex: 1 1 auto;
+	min-width: 500px;
+	height: 600px;
+}
+.right{
+	background-color: red;
+	flex: 0 0 300px;
+	height: 600px;
+}
+.person{
+	width: 250px;
+	height: 300px;
+	margin: 50px auto;
+	/* background-color: aqua; */
+}
+/* 页脚部分 */
+.footer{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	background: rgba(0,0,0,.5);
+	margin-top: 100px;
+	height: 50px;
+	width: 100%;
+}
+.footer p{
+
+}
